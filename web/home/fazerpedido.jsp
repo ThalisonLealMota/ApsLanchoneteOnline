@@ -75,7 +75,7 @@
                     <thead>
                          <tr>
                              <td>#</td>
-                             <td>IdIngrediente</td>
+                             <td>Ingrediente</td>
                              <td>Quantidade</td>
                              <td>Preço</td>
                          </tr>
