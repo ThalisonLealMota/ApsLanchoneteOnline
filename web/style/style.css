@@ -1,0 +1,272 @@
+.login-box h1{
+    float: top;
+    font-size: 40px;
+    border-bottom: 3px solid;
+    margin-bottom: 50px;
+    padding: 13px 0;
+    text-align: center;
+    background-color: orange;
+
+}
+
+.msg{
+    float:top;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding: 0px 0;
+    color: white;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #010203;
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 24px;
+    border-color: orange;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"], .box input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;    
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 280px;
+    border-color: orange;
+}
+
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+    background: black;
+    transition: 1.0s;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    background-color: orange;
+    padding: 20px;
+    height: 40px;
+}
+    
+    .vmenu a {
+        position: relative;
+        top: -39px;
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 25px;
+        text-decoration: none;
+        width: 150px;
+    }
+    
+    .vmenu a:hover {
+        background-color: #ccc;
+    }
+    
+    .vmenu a.active {
+        background-color: orange;
+        color: white;
+        width: 150px;
+    }
+    
+        #main {
+        position: absolute;
+        left: 15%;
+        right: 10%;
+        top: 85px;
+        height: 110%;
+        padding: 20px;
+        width: 82%;
+        background-color: #f1f1f1;
+    }
+    
+    .btl {
+       position: absolute;
+       left: 90%;
+       bottom: 90%;
+       width: 100px;
+       height: 50px;
+       background: none;
+       border: none;
+       
+        
+    }
+    
+.boxi{
+    width: 300px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.boxi h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.boxi input[type = "text"], .boxi input[type = "number"]{
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;    
+}
+
+.boxi input[type = "text"]:focus, .boxi input[type = "number"]:focus{
+    width: 280px;
+    background: none;
+    color: black;
+    border-color: orange;
+}
+
+.boxi input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.boxi input[type = "submit"]:hover{
+    background: black;
+    transition: 1.0s;
+    color: white;
+}
+
+
+.login-box h2{
+    float: top;
+    font-size: 20px;
+    border-bottom: 3px solid;
+    margin-bottom: 50px;
+    padding: 13px 0;
+    text-align: center;
+    background-color: orange;
+    position: static;
+    width: 99%;
+    top: 15%;
+
+}
+
+.cbbox{
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 0px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;  
+    
+}
+
+.login-box h3{
+    float: bottom;
+    font-size: 20px;
+    border-bottom: 3px solid;
+    margin-bottom: 50px;
+    padding: 13px 0;
+    text-align: center;
+    background-color: orange;
+    position: static;
+    width: 99%;
+    top: 15%;
+}
+
+
+table{
+    position: absolute;
+    top: -320px;
+    left: -200px;
+    font-size: 20px;
+    width: max-content;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+td,th{
+    border: 1px solid black;
+    height: 50px;
+    text-align: left;
+}
+
+.boxi input[type = "textt"]{
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;    
+}
+
+    
+    
