@@ -43,4 +43,20 @@ public class DAOPessoa {
         return pessoas;
     }
     
+    public List<Pessoa> encontrarPorNome(String nome){
+        List<Pessoa> pessoas = null;
+        conect.abreConexao();
+        
+        try{
+            Query query = conect.em.createNamedQuery("Pessoa.findByUsername");
+            query.setParameter("username", nome);
+            
+            pessoas = query.getResultList();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        conect.fechaConexao();
+        return pessoas;
+    }
+    
 }

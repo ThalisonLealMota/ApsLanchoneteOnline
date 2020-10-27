@@ -87,7 +87,7 @@ public class ServletSalvarPessoa extends HttpServlet {
         String submitType = request.getParameter("enviar");
         
         
-        List<Pessoa> pessoas = daoPessoa.login(nome, senha);
+        List<Pessoa> pessoas = daoPessoa.encontrarPorNome(nome);
         if(pessoas.isEmpty()){
         if((!nome.equals("") || !senha.equals("d41d8cd98f00b204e9800998ecf8427e")) && submitType.equals("Salvar")){
                 pessoa.setUsername(nome);
