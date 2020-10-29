@@ -59,7 +59,7 @@
                          %>
                          <%
                          if(request.getSession().getAttribute("pedidos") != null){%>
-                    <thead>
+                         <thead style="background-color: orange;">
                          <tr>
                              <td>#</td>
                              <td>IdPedido</td>
@@ -73,7 +73,7 @@
                              t += p.getPreco();
                              DecimalFormat df = new DecimalFormat("0.00");
                          %>
-                     <tbody>                         
+                         <tbody style="background-color: none; border-collapse: separate;">                         
                          <tr>
                              <td><%=i++%></td>
                              <td><%=p.getIdPedido()%></td>

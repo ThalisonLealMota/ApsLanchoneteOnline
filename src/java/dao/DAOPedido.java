@@ -61,7 +61,6 @@ public class DAOPedido {
             for(Lanche l : lanches){
                 DAOVendas daoVendas = new DAOVendas();
                 DAOIngrediente daoIngrediente = new DAOIngrediente();
-                Ingrediente ingrediente = new Ingrediente();
                 List<Ingrediente> ingredientes = daoIngrediente.encontrar(l.getIdIngrediente().getId());
                 Vendas vendas = new Vendas();
                 vendas.setNome(ingredientes.get(0).getNome());
@@ -69,6 +68,9 @@ public class DAOPedido {
                 vendas.setPreco(ingredientes.get(0).getPreco());
                 vendas.setDtVenda(java.util.Calendar.getInstance().getTime());
                 vendas.setIdIngrediente(ingredientes.get(0));
+                Ingrediente ingrediente = ingredientes.get(0);
+                ingrediente.setQuantidade(ingredientes.get(0).getQuantidade() - l.getQuantidade());
+                daoIngrediente.alterar(ingrediente);
                 daoVendas.salvar(vendas);
             }
         }

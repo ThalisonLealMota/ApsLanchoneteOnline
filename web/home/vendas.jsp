@@ -64,7 +64,7 @@
                          %>
                          <%
                          if(request.getSession().getAttribute("vendas") != null){%>
-                    <thead>
+                     <thead style="background: orange;">
                          <tr>
                              <td>#</td>
                              <td>Ingrediente</td>

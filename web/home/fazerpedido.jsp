@@ -73,7 +73,7 @@
                          <%
                          if(request.getSession().getAttribute("list") != null){%>
                     <thead>
-                         <tr>
+                        <tr style="background-color: orange;">
                              <td>#</td>
                              <td>Ingrediente</td>
                              <td>Quantidade</td>
@@ -88,7 +88,7 @@
                              Ingrediente in = ing.get(0);
                              t += u.getPreco();
                          %>
-                     <tbody>                         
+                         <tbody style="background: none;">                         
                          <tr>
                              <td><%=i++%></td>
                              <td><%=in.getNome()%></td>

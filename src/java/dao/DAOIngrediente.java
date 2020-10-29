@@ -69,4 +69,14 @@ public class DAOIngrediente {
         return ingredientes;
     }
     
+    public void alterar(Ingrediente ingrediente){
+        try{
+            conect.abreConexao();
+            conect.em.merge(ingrediente);
+            conect.fechaConexao();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
 }
