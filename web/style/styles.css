@@ -253,7 +253,7 @@ td,th{
     text-align: left;
 }
 
-.boxi input[type = "textt"]{
+.boxi input[type = "textt"], .boxi input[type = "numbert"]{
     border: 0;
     background: black;
     display: block;

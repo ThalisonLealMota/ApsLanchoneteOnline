@@ -10,7 +10,7 @@
 <%@page import="java.util.List"%>
 <%@page import="entidade.Ingrediente"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<link rel="stylesheet" href="<%=request.getContextPath()%>/style/style.css"/>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/style/styles.css"/>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -30,6 +30,7 @@
                 <c:if test="${CURRENT_NVA >= 2}">
                     <a class="menu_link" href="<%=request.getContextPath()%>/home/cadastroingredientes.jsp">Cadastrar Ingredientes</a>
                     <a class="menu_link" href="<%=request.getContextPath()%>/home/vendas.jsp">Listar Vendas</a>
+                    <a class="menu_link" href="<%=request.getContextPath()%>/home/estoque.jsp">Estoque</a>
                 </c:if>
                     <a class="menu_link" href="<%=request.getContextPath()%>/home/pedidos.jsp">Pedidos</a>
                 <a class="menu_link active" href="<%=request.getContextPath()%>/home/fazerpedido.jsp">Fazer Pedido</a>

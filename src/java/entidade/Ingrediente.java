@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Collection;
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,7 +32,7 @@ import javax.xml.bind.annotation.XmlTransient;
 @Table(name = "ingrediente")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Ingrediente.findAll", query = "SELECT i FROM Ingrediente i ORDER BY i.preco")
+    @NamedQuery(name = "Ingrediente.findAll", query = "SELECT i FROM Ingrediente i ORDER BY i.id")
     , @NamedQuery(name = "Ingrediente.findById", query = "SELECT i FROM Ingrediente i WHERE i.id = :id")
     , @NamedQuery(name = "Ingrediente.findByNome", query = "SELECT i FROM Ingrediente i WHERE i.nome = :nome")
     , @NamedQuery(name = "Ingrediente.findByTipo", query = "SELECT i FROM Ingrediente i WHERE i.tipo = :tipo")
@@ -43,9 +44,9 @@ public class Ingrediente implements Serializable {
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Column(name = "preco")
     private Float preco;
-    @OneToMany(mappedBy = "idIngrediente")
+    @OneToMany(mappedBy = "idIngrediente", cascade = CascadeType.ALL, orphanRemoval = true)
     private Collection<Vendas> vendasCollection;
-    @OneToMany(mappedBy = "idIngrediente")
+    @OneToMany(mappedBy = "idIngrediente", cascade = CascadeType.ALL, orphanRemoval = true)
     private Collection<Lanche> lancheCollection;
 
     private static final long serialVersionUID = 1L;

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style/style.css"/>
+<link rel="stylesheet" href="style/styles.css"/>
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

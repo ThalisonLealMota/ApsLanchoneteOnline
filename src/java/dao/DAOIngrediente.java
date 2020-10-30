@@ -79,4 +79,14 @@ public class DAOIngrediente {
         }
     }
     
+    public void exclur(Ingrediente ingrediente){
+        try{
+            conect.abreConexao();
+            conect.em.remove(conect.em.find(Ingrediente.class, ingrediente.getId()));
+            conect.fechaConexao();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    
 }
